@@ -72,6 +72,8 @@
 方法 (methods/)      用什么手段：提示词 → 上下文 → 工作流 → 工具 → 参数 → 模型 → 微调
    =
 实验 (experiments/)  某个方法在某个情境、某个模型上的一次测试，附全部原始输出
+
+笔记 (docs/notes/)   讨论中形成的想法和假设，用来启发新的情境和方法
 ```
 
 同一个情境下，不同方法、不同模型的结果可以并排比较。方法的分层和使用门槛见 [methods/](methods/README.md)。
@@ -92,6 +94,13 @@
 | 小说 | [S002 精修定稿：不改坏](scenarios/fiction/S002-polish.md) | [M003](methods/M003-author-writes-model-smooths.md) | [E002](experiments/fiction/E002-polish-claude.md)（定稿过程） |
 
 小说类的评判标准见 [失败模式清单](scenarios/fiction/failure-modes.md)。
+
+## 笔记
+
+讨论中形成的想法和假设，等待实验检验：
+
+- [N001 为什么模型分析得头头是道，却写不出好句子](docs/notes/N001-analysis-vs-writing.md)
+- [N002 “一读就知道是 AI 写的”：那种说不出的别扭是什么](docs/notes/N002-the-ineffable-discomfort.md)
 
 ## 参与
 
