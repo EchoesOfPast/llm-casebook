@@ -1,0 +1,36 @@
+name: 提一个情境
+description: 你希望模型在某件事上做好，但现在做不好
+title: "[情境] "
+labels: ["scenario"]
+body:
+  - type: input
+    id: domain
+    attributes:
+      label: 领域
+      placeholder: 如：小说 / 中文 / 悬疑
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: 想要的效果
+      description: 具体到能判断“做到了没有”
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: 测试输入
+      description: 一段固定的输入，请用自己写的或公有领域的文本
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: 现在模型的输出哪里不对
+      description: 可以贴一段实际输出，并注明模型和日期
+  - type: textarea
+    id: taste
+    attributes:
+      label: 口味说明（可选）
+      description: 这是谁的标准？哪些效果不在目标里？

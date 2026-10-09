@@ -1,0 +1,51 @@
+name: 提交实验
+description: 在某个情境上测试了某个方法
+title: "[实验] "
+labels: ["experiment"]
+body:
+  - type: input
+    id: scenario
+    attributes:
+      label: 情境编号
+      placeholder: 如：S001
+    validations:
+      required: true
+  - type: input
+    id: method
+    attributes:
+      label: 方法编号或简述
+      placeholder: 如：M002，或“先列节拍再写”
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: 模型与使用方式
+      placeholder: 如：Claude Opus 5.5 网页版 / GPT API temperature=0.7
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: 测试日期
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: 完整提示词 / 操作步骤
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: outputs
+    attributes:
+      label: 原始输出（至少 3 次，全部贴上）
+    validations:
+      required: true
+  - type: textarea
+    id: verdict
+    attributes:
+      label: 你的判断
+      description: 对照失败模式清单，哪些有、哪些没有
