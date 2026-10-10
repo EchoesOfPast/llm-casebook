@@ -29,3 +29,4 @@
 | [M001](M001-rule-list.md) | 禁令清单 + 正反示范 | prompt | 已验证（负面） | S001 |
 | [M002](M002-author-anchor.md) | 作者认可文本作锚点 | context | 待验证 | S001 |
 | [M003](M003-author-writes-model-smooths.md) | 作者写内容，模型只顺句子 | workflow | 待验证（有一次正面记录） | 初稿润色（E002） |
+| [M004](M004-verbalized-sampling.md) | 一次要多个候选并标概率 | prompt | 待验证（英文研究有证据） | S001 |

@@ -50,8 +50,8 @@
 **呈现，不要告知。**
 这是写作课上的老话，原本讲给写作者听，后来我发现它在三个地方同时成立。写小说时，解说情绪不如直接写出发生了什么；指挥模型时，讲一堆规则不如给它看一段好文字；做一个方法库时，说“这个提示词很好用”不如贴出原始输出。这个项目在形式上，就是第三种呈现。
 
-**利用“知道”和“做到”之间的缝隙。**
-模型诊断问题的能力强于它控制输出的能力。好的方法应该利用这一点：标准固定在模型之外，让模型对照检查，而不是指望它一次写对；把生成和评判拆开，不让同一段对话的气氛同时决定两者。
+**让模型按清单找问题，别让它整体打分。**
+研究发现，模型整体评判作品好坏并不可靠，但给它一份具体清单和几个例子，它能找出相当一部分问题，按清单自我修改也能明显改善文字（见 [N001](docs/notes/N001-analysis-vs-writing.md)）。所以好的方法应该把标准固定在模型之外，让模型对照检查，而不是指望它一次写对；同时把生成和评判拆开，不让同一段对话的气氛同时决定两者。
 
 **判断留在人这边。**
 模型擅长整理、展开、排查前后矛盾，也擅长在你给出材料后把句子理顺。但“什么是好”是某个具体的人的判断。这个项目里的每个情境都要写清楚“这是谁的口味”，因为不存在对所有人都好的写法。
@@ -90,7 +90,7 @@
 
 | 领域 | 情境 | 方法 | 实验 |
 |---|---|---|---|
-| 小说 | [S001 重逢场景](scenarios/fiction/S001-reunion.md) | [M001](methods/M001-rule-list.md)、[M002](methods/M002-author-anchor.md) | [E001](experiments/fiction/E001-rule-list.md) |
+| 小说 | [S001 重逢场景](scenarios/fiction/S001-reunion.md) | [M001](methods/M001-rule-list.md)、[M002](methods/M002-author-anchor.md)、[M004](methods/M004-verbalized-sampling.md) | [E001](experiments/fiction/E001-rule-list.md) |
 | 小说 | [S002 精修定稿：不改坏](scenarios/fiction/S002-polish.md) | [M003](methods/M003-author-writes-model-smooths.md) | [E002](experiments/fiction/E002-polish-claude.md)（定稿过程） |
 
 小说类的评判标准见 [失败模式清单](scenarios/fiction/failure-modes.md)。
